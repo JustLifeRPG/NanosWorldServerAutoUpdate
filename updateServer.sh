@@ -51,6 +51,8 @@ else
         echo
         echo "Download failed, cleaning up parital download and exiting."
         rm $latest_download_path
+        echo "Starting NanosWorldServer"
+        eval $cmd_startserver
         exit 30
     fi
     # success, install
